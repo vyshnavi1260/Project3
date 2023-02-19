@@ -47,6 +47,8 @@ function set()
 	localStorage.setItem("fromname", fromn);
 	var froma=document.getElementById("froma").value;
 	localStorage.setItem("fromaddress", froma);
+	var place=document.getElementById("pla").value;
+	localStorage.setItem("place", place);
 	var toname=document.getElementById("toname").value;
 	localStorage.setItem("toname", toname);
 	var toadd=document.getElementById("toadd").value;
@@ -78,7 +80,7 @@ function sub()
 	document.getElementById("head").innerHTML=head;
 	var left=localStorage.getItem("left");
 	document.getElementById("head").style.textAlign=left;
-	var right=localStorage.getItem("righ");
+	var right=localStorage.getItem("right");
 	document.getElementById("head").style.textAlign=right;
 	var col=localStorage.getItem("colorhead");
 	document.getElementById("head").style.color=col;
@@ -90,6 +92,8 @@ function sub()
 	document.getElementById("a1").innerHTML=fromn;
 	var froma=localStorage.getItem("fromaddress");
 	document.getElementById("b1").innerHTML=froma;
+	var place=localStorage.getItem("place");
+	document.getElementById("place").innerHTML=place;
 	var toname=localStorage.getItem("toname");
 	document.getElementById("c1").innerHTML=toname;
 	var toadd=localStorage.getItem("toaddress");
