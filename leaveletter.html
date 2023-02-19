@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+ <head>
+	<title>Leave Letter</title>
+	<link rel="icon" href="./letter.png"></link>
+	<script src="./letter.js" defer></script>
+	<style>
+		#head{
+			font-size:35px;
+		}
+		#body{
+			width:100vw;
+			height:100vh;
+			font-size:25px;
+		}
+		#a1, #b1, #c1, #d1, #e1{
+			text-transform:capitalize;
+		}
+		p{
+			text-indent:10vw;
+			
+		}
+		#final, #e1{
+			float:right;
+			margin-right:18vw;
+		}
+		#bold, #dat{
+			float:right;
+		}
+		#dat{
+			margin-right:18vw;
+		}
+	</style>
+ </head>
+ <body onload="sub()" id="body">
+	<h1 id="head"></h1>
+	<span id="dat"></span> <span id="bold"> Date: </span><br>
+	<span>From</span><br>
+	<span id="a1"></span><br>
+	<span id="b1"></span><br><br>
+	<span>To</span></br>
+	<span id="c1"></span><br>
+	<span id="d1"></span><br><br>
+	<span>Respected</span> <span id="wish"></span>,<br>
+	<p><span id="p"> </span>. <span>Please grant me permission from <span id="fr"></span> to <span id="to"></span></span></p>
+	<span id="final">Yours Faithfully</span><br>
+	<span id="e1"></span>
+ </body>
+</html>

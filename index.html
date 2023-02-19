@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+ <head>
+  <title>Letter</title>
+  <link rel="stylesheet" href="./letter.css">
+  <link rel="icon" href="./letter.png"></link>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <script src="./letter.js" defer></script>
+ </head>
+ <body>
+	<header id="header"></header>
+	<div>
+		<h1 id="heading">Heading</h1>
+		<input type="range" id="a" min="1" max="70" value="30" onclick="range()">
+		<input type="color" id="b" oninput="color1()">
+	</div>
+	<div>
+		<section id="sec"><strong id="background">Background</strong></section>
+		<section id="bu">
+			<button onclick="left()" id="left"><i class="fa-solid fa-align-left"></i></button>
+			<button onclick="center()" id="cen"><i class="fa-solid fa-align-center"></i></button>
+			<button onclick="ali()" id="ali"><i class="fa-solid fa-align-justify"></i></button>
+			<button onclick="right()" id="right"><i class="fa-solid fa-align-right"></i></button>
+		</section>
+		<input type="color" id="c" oninput="color2()">
+	</div>
+	<div>
+		<h1>Paragragh</h1>
+		<span id="para">A leave letter is a type of formal letter which is written to take permission for absence.</span>
+		<input type="color" id="d" oninput="color3()">
+	</div> 
+	<form action="./leaveletter.html">
+	<table>
+		<tr> 
+			<td>From Name</td> 
+			<td><input type="text" placeholder="From Name" id="fromn" required></td>
+		</tr>
+		<tr>
+			<td>From Address</td> 
+			<td><input type="text" placeholder="From Address" id="froma" required></td>
+		</tr>
+		<tr>
+			<td>Today's Date</td>
+			<td><input type="date" id="date"></td>
+		</tr>
+		<tr>
+			<td>To Name</td>
+			<td><input type="text" placeholder="To name" id="toname" required></td>
+		</tr>
+		<tr>
+			<td>To Address</td> 
+			<td><input type="text" placeholder="To Address" id="toadd" required></td>
+		</tr>
+		<tr>
+			<td>Subject</td>
+			<td><select id="s" required>
+				<option>-Select-</option>
+				<option>Sir</option>
+				<option>Mam</option>
+				</select>
+			</td>
+			<td><input type="text" placeholder="Subject" id="sub" required></td>
+		<tr>
+		<tr>
+			<td>Reason</td>
+			<td><input type="text" id="reason" required></td>
+		</tr>
+		<tr>
+			<td>From</td>
+			<td><input type="date" id="fdate" required></td> 
+			<td>To <input type="date" id="todate" required></td>
+		</tr>
+		<tr>
+			<td>Number of days</td>
+			<td><input type="number" id="days" required></td>
+		</tr>
+	</table>
+	<input type="submit" id="button" value="Generate the Form" onclick="set()">
+	</form>
+ </body>
+</html>
